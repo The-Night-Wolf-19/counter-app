@@ -1,55 +1,49 @@
-/* .counterComponent {
-  display: flex;
-  justify-items: center;
-} */
 .loadingComponent {
   display: flex;
   padding-left: 5%;
 }
+.loadingComponentText {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 .counter {
   display: flex;
-  width: 20vw;
-  height: 10vh;
-  border: 1px solid #a54946;
+  min-width: 20vw;
+  min-height: 10vh;
+  border: 2px solid #a54946;
   border-radius: 15px;
   overflow: hidden;
   margin: 2%;
+  background-color: #a54946;
   user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  /* flex-direction: row; */
 }
 .decreaseBtn {
-  /* display: flex; */
-  /* width: 10 vw; */
-  flex: 1;
+  width: 33.33%;
   font-size: 3rem;
   display: flex;
   justify-content: center;
   font-weight: 600;
   color: #a54946;
+  background-color: white;
   cursor: pointer;
 
-  border-right: 1px solid #a54946;
+  border-right: 2px solid #a54946;
 }
 .inputField {
-  /* flex: 1; */
-  width: 33.33%;
-  max-width: 33.33%;
+  width: 33.34%;
+  max-width: 33.34%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: #a54946;
-  /* border: 2px solid #a54946; */
   background-color: #f8e9e9;
-  /* -moz-appearance: textfield; */
-  /* -webkit-appearance: none; */
-  /* margin: 0; */
   outline: none;
   border: none;
   text-align: center;
@@ -59,19 +53,17 @@
   -webkit-appearance: none;
   margin: 0;
 }
-
-/* Firefox */
 .inputField[type="number"] {
   -moz-appearance: textfield;
 }
+
 .increaseBtn {
-  flex: 1;
   font-size: 3rem;
+  width: 33.33%;
   display: flex;
   font-weight: 600;
   justify-content: center;
   color: white;
-  /* border: 2px solid; */
   background-color: #a54946;
   cursor: pointer;
 }

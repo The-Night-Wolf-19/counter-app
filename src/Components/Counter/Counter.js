@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import CounterValue from "../CounterValue/CounterValue";
 import Loader from "../Loader/Loader";
 
 import "./Counter.css";
 
-const Counter = ({ counter, setCounter }) => {
+const Counter = ({ counter, setCounter, loading }) => {
   const handleDecrease = () => {
     if (counter > 1) {
       setCounter(counter - 1);
@@ -11,7 +12,8 @@ const Counter = ({ counter, setCounter }) => {
   };
   const handleIncrease = () => {
     if (counter < 1000) {
-      setCounter(counter + 1);
+      if (counter == null) setCounter(counter + 2);
+      else setCounter(counter + 1);
     }
   };
   const handleChange = (val) => {
@@ -26,12 +28,17 @@ const Counter = ({ counter, setCounter }) => {
   };
   return (
     <div className="counterComponent">
-      <div className="loadingComponent">
-        <Loader />
-        <span>&nbsp;&nbsp;Saving counter value</span>
-      </div>
+      {loading ? (
+        <div className="loadingComponent">
+          <Loader />
+          <span className="loadingComponentText">
+            &nbsp;&nbsp;Saving counter value
+          </span>
+        </div>
+      ) : (
+        ""
+      )}
       <div className="counter">
-        {/* <Loader /> */}
         <div className="decreaseBtn" onClick={handleDecrease}>
           -
         </div>
@@ -44,6 +51,9 @@ const Counter = ({ counter, setCounter }) => {
         <div className="increaseBtn" onClick={handleIncrease}>
           +
         </div>
+      </div>
+      <div>
+        <CounterValue counter={counter} />
       </div>
     </div>
   );

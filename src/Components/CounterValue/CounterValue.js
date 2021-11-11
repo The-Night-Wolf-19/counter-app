@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./CounterValue.css";
 const CounterValue = ({ counter }) => {
   return (
-    <div>
-      <div>{counter == null ? 1 : counter}</div>
+    <div className="counterValueDiv">
+      <span>Counter value:&nbsp;{counter == null ? 1 : counter}</span>
     </div>
   );
 };
