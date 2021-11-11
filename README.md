@@ -1,7 +1,7 @@
 # Quicksell Assignment
 Quicksell Counter App assignment.\
 Deployed at [Counter App](https://quicksell-counterapp-shubhamsinhaiitbhu.netlify.app/) .\
-Demo for the app at [Video](https://drive.google.com/file/d/1bCvg4BXTgCG3U9AIC1GBjaYdZ9lROLvo/view?usp=sharing) .\
+Demo for the app at [Video](https://drive.google.com/file/d/1bCvg4BXTgCG3U9AIC1GBjaYdZ9lROLvo/view?usp=sharing) .
 
 
 # Getting Started with Create React App
